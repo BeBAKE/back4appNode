@@ -4,7 +4,11 @@ const app = new express();
 const port = 4500;
 
 app.get("/api/v1/home", async (req, res) => {
-  res.status(200).json({ msg: "you have reached the home page of nodejs app" });
+  res
+    .status(200)
+    .json({
+      msg: "you have reached the home page of nodejs app that i made in few seconds",
+    });
 });
 app.post("/api/v1/data", async (req, res) => {
   try {
